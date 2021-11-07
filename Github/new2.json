@@ -1,5 +1,10 @@
 {
 	"name":"Diana",
 	"pets":3,
-	"salary":4500
+	"salary":"4500 per mounth",
+	"movie":"Harry Potter",
+	"TV series":"Game of the thrones",
+	"meal":"steik",
+	"season":"summer",
+	"country":"Scotland
 }
