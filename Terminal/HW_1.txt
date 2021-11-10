@@ -1,0 +1,42 @@
+Первое ДЗ 
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я = pwd
+2) Создать папку = mkdir (name folder)
+3) Зайти в папку = cd (name folder)
+4) Создать 3 папки = mkdir {name folder,name folder,name folder}
+5) Зайти в любоую папку = cd (name folder)
+6) Создать 5 файлов (3 txt, 2 json) = touch {name_file.txt,name_file.txt,name_file.txt,name_file.json,name_file.json}
+7) Создать 3 папки = mkdir {name folder,name folder,name folder}
+8. Вывести список содержимого папки = ls -l
+9) + Открыть любой txt файл = vim (name file).txt
+10) + написать туда что-нибудь, любой текст. = i (write something)
+11) + сохранить и выйти. = esc -> :wq -> enter
+12) Выйти из папки на уровень выше = cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. = mv name folder/{name_file,name_file} name folder
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. = mv name folder/{name_file,name_file} name folder
+15) Найти файл по имени = find -name "name_file"
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. = tail -F name_file.txt
+17) вывести несколько первых строк из текстового файла = head -n2 name_file.txt
+18) вывести несколько последних строк из текстового файла = tail -n2 name_file.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. less 1.txt
+20) вывести дату и время  = date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000  = curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+#!/bin/bash
+# our comment is here
+cd f_4
+mkdir {fo_1,fo_2,fo_3}
+cd fo_1
+touch {a.txt,b.txt,c.txt,d.json,e.json}
+mkdir {fol_1,fol_2,fol_3}
+ls -l
+mv a.txt d.json fol_2/
+
+
