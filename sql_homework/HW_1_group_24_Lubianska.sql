@@ -2,7 +2,7 @@
 select * from students;
 
 --Вывести всех студентов в таблице
-select * from students;
+select students from students;
 
 --Вывести только Id пользователей
 select id from students;
@@ -25,7 +25,7 @@ select * from students where password = '12333';
 --Вывести пользователей которые были созданы 2021-03-26 00:00:00
 select * from students where created_on = '2021-03-26 00:00:00';
 --Вывести пользователей где в имени есть слово Анна
-select * from students where name = 'Анна';
+select * from students where name like '%Анна%';
 
 --Вывести пользователей где в имени в конце есть 8
 select * from students where name like '%8';
