@@ -24,6 +24,7 @@ select * from students where password = '12333';
 
 --Вывести пользователей которые были созданы 2021-03-26 00:00:00
 select * from students where created_on = '2021-03-26 00:00:00';
+
 --Вывести пользователей где в имени есть слово Анна
 select * from students where name like '%Анна%';
 
